@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Lab1Library/Lab1Library.csproj" />
+  <Project Path="Lab1WPF/Lab1WPF.csproj" />
+</Solution>
