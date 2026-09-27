@@ -27,8 +27,13 @@ namespace Lab1WPF
         {
             try
             {
-                students.Add(new Student(txtName.Text, txtSurname.Text, txtId.Text, txtGroup.Text));
+                students.Add(new Student(txtName.Text, txtSurname.Text, txtId.Text, txtGroup.Text, txtEmail.Text));
                 InvalidateList();
+                txtName.Clear();
+                txtSurname.Clear();
+                txtId.Clear();
+                txtGroup.Clear();
+                txtEmail.Clear();
 
             }
             catch (Exception ex)
@@ -68,5 +73,7 @@ namespace Lab1WPF
         {
             lstStudents.ItemsSource = students.Students.ToList();
         }
+
+
     }
 }
